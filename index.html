@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMM Papelería | Útiles escolares, copias, impresiones y regalos</title>
+  <meta name="description" content="MMM Papelería reúne útiles escolares, copias e impresiones, engargolados, enmicados, forrado de cuadernos, regalos y material didáctico en un solo lugar.">
+  <meta name="keywords" content="MMM Papelería, papelería, útiles escolares, copias, impresiones, engargolados, enmicados, forrado de cuadernos, regalos">
+  <meta property="og:title" content="MMM Papelería | Todo para estudiar, crear y resolver">
+  <meta property="og:description" content="Papelería con útiles escolares, copias, impresiones, forrado, engargolados, enmicados, regalos y más.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/logo-mmm-original.jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <img src="assets/img/logo-mmm-transparent.png" alt="">
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Preparando tu papelería...</span>
+  </div>
+
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo" aria-label="MMM Papelería, inicio">
+          <img class="nav-logo-img" src="assets/img/logo-mmm-transparent.png" alt="Logo de MMM Papelería">
+          <div class="nav-logo-copy">
+            <span>MMM</span>
+            <span>Papelería</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Servicios</a></li>
+            <li><a href="#ambientes">Soluciones</a></li>
+            <li><a href="#proceso">Atención</a></li>
+            <li><a href="#producto">Destacado</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contacto" class="btn-gold nav-cta">Solicitar cotización</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Servicios</a>
+      <a href="#ambientes">Soluciones</a>
+      <a href="#proceso">Atención</a>
+      <a href="#producto">Destacado</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto">Pedir información</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Papelería · Regalos · Servicios escolares
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Todo para</span></span>
+            <span class="line"><span>estudiar, crear</span></span>
+            <span class="line"><span class="accent">y resolver.</span></span>
+          </h1>
+
+          <p class="hero-sub" id="hero-sub">
+            En <strong>MMM Papelería</strong> encuentras útiles escolares, copias, impresiones, engargolados, enmicados, forrado de cuadernos, regalos y material para tus proyectos diarios.
+          </p>
+
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="#contacto" class="btn-gold">
+              Solicitar cotización
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+              Ver soluciones
+            </a>
+          </div>
+
+          <div class="hero-trust" id="hero-trust" aria-label="Servicios principales">
+            <div class="trust-item">
+              <i class="fa-solid fa-print" aria-hidden="true"></i>
+              Copias e impresiones
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-book" aria-hidden="true"></i>
+              Forrado escolar
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-gift" aria-hidden="true"></i>
+              Regalos y detalles
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">La diferencia</div>
+            <h2 class="why-quote" id="why-heading">
+              Una buena papelería te ahorra vueltas,
+              <em> te da opciones y resuelve en el momento.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            MMM Papelería reúne productos y servicios prácticos para estudiantes, familias, docentes y proyectos creativos: desde una copia urgente hasta el material completo para entregar bien.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-pencil"></i></div>
+            <h3>Útiles escolares</h3>
+            <p>Material para clases, tareas, maquetas y proyectos: papeles, pegamentos, brochas, pinceles, colores y artículos de uso diario.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-print"></i></div>
+            <h3>Copias e impresiones</h3>
+            <p>Impresiones y copias en blanco y negro o color para documentos, tareas, formatos y entregas escolares.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-book-open"></i></div>
+            <h3>Forrado y acabado</h3>
+            <p>Forrado de cuadernos, libretas, libros y carpetas, además de engargolados y enmicados para presentar mejor.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-gift"></i></div>
+            <h3>Regalos y extras</h3>
+            <p>Regalos, juguetes, peluches, plásticos, pilas, cargadores, audífonos y artículos prácticos para resolver compras rápidas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Soluciones por necesidad</div>
+            <h2 class="section-title" id="amb-heading">
+              Lo que necesitas,<br>
+              <span class="gold">listo para llevar o preparar.</span>
+            </h2>
+            <p class="section-copy">
+              Cada visita puede tener una urgencia distinta. Por eso la página organiza los servicios como los busca un cliente real: escuela, impresión y regalo.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">Papelería · Copias · Regalos</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+          <div class="amb-card reveal">
+            <img class="amb-img" src="assets/img/listas-utiles-escolares-mmm.jpeg" alt="Promoción de MMM Papelería para surtir listas de útiles escolares">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-list-check"></i></div>
+              <h3>Listas escolares</h3>
+              <p>Surtido de útiles para regreso a clases, tareas y proyectos de temporada.</p>
+              <div class="amb-temp">Útiles · Material didáctico</div>
+            </div>
+          </div>
+
+          <div class="amb-card reveal d1">
+            <img class="amb-img" src="assets/img/copias-impresiones-mmm.jpeg" alt="Servicio de copias e impresiones en blanco y negro o color">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-copy"></i></div>
+              <h3>Copias e impresiones</h3>
+              <p>Documentos, tareas y materiales impresos en blanco y negro o color.</p>
+              <div class="amb-temp">Blanco · Negro · Color</div>
+            </div>
+          </div>
+
+          <div class="amb-card reveal d2">
+            <img class="amb-img" src="assets/img/catalogo-servicios-papeleria.jpeg" alt="Lista de productos y servicios disponibles en MMM Papelería">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-gift"></i></div>
+              <h3>Regalos y compras rápidas</h3>
+              <p>Detalles, juguetes, peluches, pilas, cargadores, audífonos y más básicos útiles.</p>
+              <div class="amb-temp">Detalles · Accesorios · Extras</div>
+            </div>
+          </div>
+
+          <div class="amb-card reveal">
+            <img class="amb-img" src="https://images.unsplash.com/photo-1781988925425-d3834498ff0b?auto=format&fit=crop&w=1400&q=85" alt="Libros, lápices, clips y tijeras como útiles escolares organizados">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-scissors"></i></div>
+              <h3>Material escolar completo</h3>
+              <p>Libros, lápices, clips, tijeras y básicos para estudiar, organizar y entregar trabajos.</p>
+              <div class="amb-temp">Libros · Lápices · Tijeras</div>
+            </div>
+          </div>
+
+          <div class="amb-card reveal d1">
+            <img class="amb-img" src="https://images.unsplash.com/photo-1770017863955-56a1501a3c93?auto=format&fit=crop&w=1400&q=85" alt="Impresora de gran formato produciendo material gráfico en papel">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-file-lines"></i></div>
+              <h3>Papeles y documentos</h3>
+              <p>Soluciones para hojas, formatos, documentos, tareas impresas y presentaciones rápidas.</p>
+              <div class="amb-temp">Papel · Formatos · Entregas</div>
+            </div>
+          </div>
+
+          <div class="amb-card reveal d2">
+            <img class="amb-img" src="https://images.unsplash.com/photo-1764044371485-b83d1e023d8b?auto=format&fit=crop&w=1400&q=85" alt="Cuaderno, lápices, regla y sacapuntas para estudio y dibujo">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-ruler-combined"></i></div>
+              <h3>Dibujo y creatividad</h3>
+              <p>Material para trazar, escribir, bocetar y preparar proyectos escolares o creativos.</p>
+              <div class="amb-temp">Reglas · Cuadernos · Dibujo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+        <div class="proceso-header reveal">
+          <div class="label">Cómo te atendemos</div>
+          <h2 class="section-title" id="proceso-heading">
+            Rápido, claro y <span class="gold">sin complicarte.</span>
+          </h2>
+          <p>Ya sea para una tarea, una impresión, un forrado o una lista escolar, la experiencia debe sentirse simple desde el primer minuto.</p>
+        </div>
+
+        <div class="proceso-grid">
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Cuéntanos qué necesitas</h3>
+            <p>Trae tu lista, archivo, cuaderno, carpeta o idea de regalo. Identificamos el servicio o material adecuado.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Elegimos la mejor opción</h3>
+            <p>Te orientamos entre productos, acabados, tamaños, colores o materiales según el uso que le vas a dar.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Sales con todo resuelto</h3>
+            <p>Preparamos, imprimimos, forramos o reunimos tus productos para que puedas seguir con tu día.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+          <div class="reveal">
+            <div class="label">Servicio destacado</div>
+            <h2 class="section-title" id="prod-heading">
+              Forrado de cuadernos,<br>
+              <span class="gold">libretas, libros y carpetas.</span>
+            </h2>
+            <p class="producto-lead">
+              Un servicio práctico para cuidar materiales escolares, mejorar la presentación y alargar la vida de lo que se usa todos los días.
+            </p>
+
+            <ul class="feature-rows" aria-label="Servicios destacados de MMM Papelería">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-book"></i></div>
+                <div>
+                  <h4>Cuadernos y libretas</h4>
+                  <p>Ideal para regreso a clases, uso diario y materiales que necesitan protección constante.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-folder-open"></i></div>
+                <div>
+                  <h4>Libros y carpetas</h4>
+                  <p>Acabado limpio para organizar, proteger y mantener tus materiales en buen estado.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></div>
+                <div>
+                  <h4>Engargolados y enmicados</h4>
+                  <p>Presenta trabajos, documentos y recursos escolares con una apariencia más profesional.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-palette"></i></div>
+                <div>
+                  <h4>Material para proyectos</h4>
+                  <p>Papeles, pegamentos, material didáctico, brochas, pinceles y artículos para dibujo.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Resumen de servicios">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">4</span>
+                <span class="spec-name">Forrados</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">3</span>
+                <span class="spec-name">Impresión</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">12%</span>
+                <span class="spec-name">Promo visible</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">1</span>
+                <span class="spec-name">Papelería</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <img class="featured-product-img" src="assets/img/forrado-cuadernos-mmm.jpeg" alt="Servicio de forrado de cuadernos, libretas, libros y carpetas en MMM Papelería">
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Forrado escolar
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-shield-heart"></i>
+                Material protegido
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats" aria-label="Datos clave">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="4" data-suffix="" aria-label="4 tipos de forrado">4</div>
+            <div class="stat-lbl">Cuadernos, libretas,<br>libros y carpetas</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="3" data-suffix="" aria-label="3 opciones de impresión">3</div>
+            <div class="stat-lbl">Blanco, negro<br>y color</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="12" data-suffix="%" aria-label="12 por ciento">12%</div>
+            <div class="stat-lbl">Descuento mostrado<br>en útiles escolares</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="1" data-suffix="" aria-label="1 lugar">1</div>
+            <div class="stat-lbl">Un lugar para<br>resolver más</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+        <div class="sectores-hdr reveal">
+          <div class="label">Para quiénes</div>
+          <h2 class="section-title" id="sec-heading">
+            Hecha para <span class="gold">la vida escolar y diaria.</span>
+          </h2>
+          <p>MMM Papelería atiende compras rápidas, encargos escolares, materiales creativos y detalles para regalar.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-user-graduate sector-icon" aria-hidden="true"></i>
+            <h3>Estudiantes</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-people-roof sector-icon" aria-hidden="true"></i>
+            <h3>Familias</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-chalkboard-user sector-icon" aria-hidden="true"></i>
+            <h3>Docentes</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-store sector-icon" aria-hidden="true"></i>
+            <h3>Comercios</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-wand-magic-sparkles sector-icon" aria-hidden="true"></i>
+            <h3>Creativos</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Cuéntanos qué <span class="gold">necesitas resolver.</span>
+          </h2>
+          <p>Prepara tu solicitud de útiles, impresión, forrado, engargolado, enmicado, regalo o material de proyecto.</p>
+        </div>
+
+        <div class="contact-box reveal">
+          <div class="contact-info">
+            <h3>MMM Papelería</h3>
+            <p class="ci-sub">Útiles escolares, copias, impresiones, acabados, regalos y básicos prácticos en un solo lugar.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="ci-body">
+                  <h4>Visítanos en tienda</h4>
+                  <p>Papelería física MMM. La fachada del negocio aparece en la sección principal para que puedas identificarla.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true"><i class="fa-solid fa-credit-card"></i></div>
+                <div class="ci-body">
+                  <h4>Pagos</h4>
+                  <p>Aceptación de tarjetas y Mercado Pago según la información visual proporcionada.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true"><i class="fa-solid fa-clipboard-check"></i></div>
+                <div class="ci-body">
+                  <h4>Servicio rápido</h4>
+                  <p>Haz una lista clara de lo que necesitas y nosotros la convertimos en una solicitud lista para atender.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-form-wrap">
+            <h3>Solicitar cotización</h3>
+            <form id="wa-form" novalidate data-whatsapp="">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control" placeholder="Ej. Nombre Apellido" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué necesitas?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Cotización general</option>
+                    <option>Útiles escolares</option>
+                    <option>Copias e impresiones</option>
+                    <option>Forrado de cuadernos</option>
+                    <option>Engargolado o enmicado</option>
+                    <option>Regalos o accesorios</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Detalle del pedido</label>
+                <textarea id="f-msg" class="form-control" rows="4" required placeholder="Describe cantidades, tipo de impresión, material o servicio que buscas..."></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                Preparar mensaje
+              </button>
+              <p class="form-note">Incluye cantidades, tamaños o tipo de impresión para recibir una atención más precisa.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="assets/img/logo-mmm-transparent.png" alt="">
+          <span>MMM Papelería.</span>
+        </div>
+        <p class="footer-copy">&copy; <span id="year"></span> MMM Papelería. Todos los derechos reservados.</p>
+        <div class="footer-socials">
+          <a href="#contacto" class="footer-soc" aria-label="Ir a contacto">
+            <i class="fa-solid fa-envelope-open-text"></i>
+          </a>
+          <a href="#hero" class="footer-soc" aria-label="Volver al inicio">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#contacto" class="wa-btn" aria-label="Ir al formulario de contacto">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
